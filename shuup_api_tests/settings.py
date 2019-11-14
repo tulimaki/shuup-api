@@ -9,7 +9,6 @@ from shuup_workbench.settings.utils import get_disabled_migrations
 from shuup_workbench.test_settings import *  # noqa
 
 INSTALLED_APPS = list(locals().get('INSTALLED_APPS', [])) + [
-    'shuup_api',
     'shuup_api_test_app',
 ]
 
