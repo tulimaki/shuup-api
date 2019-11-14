@@ -1,0 +1,12 @@
+sudo: false
+language: python
+cache: pip
+python:
+  - "3.6"
+install:
+  - pip install -U pip setuptools
+  - pip install -r requirements-test.txt
+script:
+  - flake8
+  - isort --check-only
+  - py.test --nomigrations shuup_api_tests --cov shuup_api/

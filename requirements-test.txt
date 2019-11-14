@@ -1,0 +1,7 @@
+-e .
+flake8
+isort
+pytest
+pytest-sugar
+pytest-django
+pytest-coverage
